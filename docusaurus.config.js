@@ -15,7 +15,7 @@ const config = {
   url: 'https://humanoid-robotics-book-phi.vercel.app',
   baseUrl: '/',
 
-  organizationName: 'ersa-rani',
+  organizationName: 'Ayesha-joyo',
   projectName: 'humanoid-robotics-book',
 
   onBrokenLinks: 'throw',
@@ -38,7 +38,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ersa-rani/humanoid-robotics-book/tree/main/',
+            'https://github.com/Ayesha-joyo/humanoid-robotics-book/tree/main/',
         },
         blog: false, // Disabled for this project
         theme: {
@@ -67,7 +67,7 @@ const config = {
             label: 'Book',
           },
           {
-            href: 'https://github.com/ersa-rani/humanoid-robotics-book',
+            href: 'https://github.com/Ayesha-joyo',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,10 +96,6 @@ const config = {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
-              {
-                label: 'X',
-                href: 'https://x.com/irsa_ranii?s=09',
-              },
             ],
           },
           {
@@ -107,12 +103,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/ersa-rani/humanoid-robotics-book',
+                href: 'https://github.com/Ayesha-joyo',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ersa rani project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ayesha Joyo project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,62 +1,55 @@
-<!--
----
-Sync Impact Report
----
-- Version change: none → 1.0.0
-- Added Principles: Accuracy, Clarity, Reproducibility, Rigor, Consistency
-- Added Sections: Standards, Constraints, Success Criteria
-- Templates requiring updates:
-  - ✅ .specify/templates/plan-template.md
-  - ✅ .specify/templates/spec-template.md
-  - ✅ .specify/templates/tasks-template.md
-- Follow-up TODOs: None
--->
-# AI/Spec-Driven Book on AI-Native Software Development Constitution
+# [PROJECT_NAME] Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
-### Accuracy
-All content verified against authoritative sources.
+### [PRINCIPLE_1_NAME]
+<!-- Example: I. Library-First -->
+[PRINCIPLE_1_DESCRIPTION]
+<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
 
-### Clarity
-Target audience is CS/software readers; explanations must be precise.
+### [PRINCIPLE_2_NAME]
+<!-- Example: II. CLI Interface -->
+[PRINCIPLE_2_DESCRIPTION]
+<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
 
-### Reproducibility
-Code and workflows must be traceable and testable.
+### [PRINCIPLE_3_NAME]
+<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
+[PRINCIPLE_3_DESCRIPTION]
+<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
 
-### Rigor
-Prefer peer-reviewed or official sources.
+### [PRINCIPLE_4_NAME]
+<!-- Example: IV. Integration Testing -->
+[PRINCIPLE_4_DESCRIPTION]
+<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
 
-### Consistency
-Maintain uniform terminology, style, and formatting.
+### [PRINCIPLE_5_NAME]
+<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
+[PRINCIPLE_5_DESCRIPTION]
+<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-## Standards
+### [PRINCIPLE_6_NAME]
 
-- Source Verification: Claims supported by credible sources.
-- Citation: APA style.
-- Sources: ≥50% peer-reviewed or official docs.
-- Plagiarism: Zero tolerance.
-- Code: Must run correctly and illustrate concepts.
-- Writing: Flesch-Kincaid grade 10–12.
 
-## Constraints
+[PRINCIPLE__DESCRIPTION]
 
-- Word Count: 15k–20k (per chapter adjustable).
-- Chapters: Intro, explanations, examples, summary.
-- Format: Markdown for Docusaurus, deployable to GitHub Pages.
-- References: In-text + compiled at chapter end.
+## [SECTION_2_NAME]
+<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-## Success Criteria
+[SECTION_2_CONTENT]
+<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
 
-- All claims verified.
-- Code runs reproducibly.
-- Book deployable via Docusaurus + GitHub Pages.
-- Zero plagiarism.
-- Passes fact-checking.
-- Clear and understandable for audience.
+## [SECTION_3_NAME]
+<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+
+[SECTION_3_CONTENT]
+<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
+<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-This Constitution is the single source of truth for project principles and standards. All contributions, reviews, and project artifacts must comply with it. Amendments require a documented proposal, review, and an approved migration plan to ensure existing content remains compliant.
+[GOVERNANCE_RULES]
+<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08
+**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->

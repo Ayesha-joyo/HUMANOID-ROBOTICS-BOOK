@@ -1,11 +1,11 @@
 ---
 
-description: "Task list for Add GitHub Profile Link feature"
+description: "Task list for UI/Theme Update and GitHub Link Integration"
 ---
 
-# Tasks: Add GitHub Profile Link
+# Tasks: UI/Theme Update and GitHub Link Integration
 
-**Input**: User request for updating GitHub profile link.
+**Input**: User request for updating UI and theme, removing X/Twitter icons, and adding GitHub link.
 **Prerequisites**: Existing Docusaurus project configuration.
 
 ## Format: `[ID] [P?] [Story?] Description`
@@ -14,16 +14,17 @@ description: "Task list for Add GitHub Profile Link feature"
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
 - Include exact file paths in descriptions
 
-## Phase: Refactor & Configuration Updates
+## Phase: UI/Theme Updates and Social Link Modifications
 
-**Purpose**: To integrate the user's GitHub profile link into the Docusaurus project's configuration wherever a GitHub icon or reference is used.
+**Purpose**: To update the site's UI/theme, remove X/Twitter icons, and integrate the new GitHub profile link into the Docusaurus project's configuration wherever GitHub references exist.
 
-- [ ] T001 Update `href` for GitHub link in `themeConfig.navbar.items` in `docusaurus.config.js` to `https://github.com/ersa-rani`.
-- [ ] T002 Update `href` for GitHub link in `themeConfig.footer.links` in `docusaurus.config.js` to `https://github.com/ersa-rani`.
-- [ ] T003 Update `docs.editUrl` in `docusaurus.config.js` to `https://github.com/ersa-rani/humanoid-robotics-book/tree/main/`.
-- [ ] T004 Update `organizationName` in `docusaurus.config.js` to `ersa-rani`.
-- [ ] T005 Update `url` in `docusaurus.config.js` to `https://ersa-rani.github.io`.
-- [ ] T006 Verify updated GitHub links by running local Docusaurus server (`npm run start` or `npm run serve`) and checking the navigation bar, footer, and edit links on documentation pages.
+- [ ] T001 [P] Update `href` for GitHub link in `themeConfig.navbar.items` in `docusaurus.config.js` to `https://github.com/Ayesha-joyo`.
+- [ ] T002 [P] Update `href` for GitHub link in `themeConfig.footer.links` in `docusaurus.config.js` to `https://github.com/Ayesha-joyo`.
+- [ ] T003 [P] Update `docs.editUrl` in `docusaurus.config.js` to `https://github.com/Ayesha-joyo/humanoid-robotics-book/tree/main/`.
+- [ ] T004 [P] Update `organizationName` in `docusaurus.config.js` to `Ayesha-joyo`.
+- [ ] T005 [P] Remove X/Twitter link and label from `themeConfig.footer.links.items` in `docusaurus.config.js`.
+- [ ] T006 [P] Update author links in `blog/authors.yml` to point to `https://github.com/Ayesha-joyo` if applicable.
+- [ ] T007 Verify updated GitHub links and removed X/Twitter icons by running local Docusaurus server (`npm run start` or `npm run serve`) and checking the navigation bar, footer, and edit links on documentation pages.
 
 ---
 
@@ -31,11 +32,11 @@ description: "Task list for Add GitHub Profile Link feature"
 
 ### Phase Dependencies
 
-- **Refactor & Configuration Updates**: No dependencies - can start immediately.
+- **UI/Theme Updates and Social Link Modifications**: No dependencies - can start immediately.
 
 ### Parallel Opportunities
 
-- Tasks T001-T005 can be executed in any order, as they modify different properties within the same file.
+- Tasks T001-T006 can be executed in parallel as they modify different parts of the configuration.
 
 ---
 
@@ -43,12 +44,12 @@ description: "Task list for Add GitHub Profile Link feature"
 
 ### Incremental Delivery
 
-1.  Complete tasks T001-T005 to update configuration.
-2.  Complete T006 for verification.
+1.  Complete tasks T001-T006 to update configuration and remove X/Twitter links.
+2.  Complete T007 for verification.
 
 ---
 
 ## Notes
 
-- This `tasks.md` is specifically for integrating the user's GitHub profile link.
-- Manual verification (T006) is critical to ensure all links are correctly updated and functional.
+- This `tasks.md` is specifically for updating UI/theme elements and integrating the new GitHub profile link.
+- Manual verification (T007) is critical to ensure all links are correctly updated and X/Twitter icons are removed.

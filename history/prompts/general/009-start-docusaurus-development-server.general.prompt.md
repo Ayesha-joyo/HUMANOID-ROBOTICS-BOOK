@@ -1,45 +1,29 @@
 ---
-id: 009
+id: 9
 title: Start Docusaurus Development Server
 stage: general
-date: 2025-12-12
+date_iso: 2025-12-14
 surface: agent
-model: gemini-1.5-flash-latest
+model: gemini-1.5-pro
 feature: none
 branch: main
-user: user
+user: 
 command: npm start
-labels: [docusaurus, development, server]
+labels: ["docusaurus", "development-server"]
 links:
   spec: null
   ticket: null
   adr: null
   pr: null
-files:
-
-tests:
-
+files_yaml:
+  - history/prompts/general/009-start-docusaurus-development-server.general.prompt.md
+tests_yaml: []
+prompt_text: |
+  npm start
+response_text: |
+  The Docusaurus development server is running at http://localhost:3000/.
+outcome: |
+  The Docusaurus development server was successfully started.
+evaluation: |
+  The agent successfully started the Docusaurus development server. The command timed out as expected for a long-running process, but the server initiated correctly.
 ---
-
-## Prompt
-
-npm start
-
-## Response snapshot
-
-Docusaurus website is running at: http://localhost:3000/humanoid-robotics-book/
-
-## Outcome
-
-- ✅ Impact: Successfully started the Docusaurus development server.
-- 🧪 Tests: No specific tests were run for this action as it's a server startup.
-- 📁 Files: No files were created or modified.
-- 🔁 Next prompts: User will interact with the running server or provide next instructions.
-- 🧠 Reflection: The command timed out, but the server started successfully. This is expected behavior for long-running processes.
-
-## Evaluation notes (flywheel)
-
-- Failure modes observed: Command timeout due to long-running process, but not an actual failure.
-- Graders run and results (PASS/FAIL): N/A
-- Prompt variant (if applicable): N/A
-- Next experiment (smallest change to try): N/A
